@@ -4,6 +4,8 @@ const colors = {
 	primary: '#000000',
 	secondary: 'rgba(0, 0, 0, 0.6)',
 	accent: '#E7FAFE',
+	white: '#FFFFFF',
+	light: 'rgba(0, 0, 0, 0.05)',
 };
 
 export const theme = {
@@ -35,7 +37,16 @@ export const theme = {
 	},
 	breakpoints: ['24rem', '47rem', '90rem'] as unknown as Breakpoints,
 	space: {
-		s16: 2,
+		s0: '0rem',
+		s4: '0.25rem',
+		s8: '0.5rem',
+		s16: '1rem',
+		s24: '1.5rem',
+		s32: '2rem',
+		s40: '2.5rem',
+		s48: '3rem',
+		s64: '4rem',
+		s80: '5rem',
 	},
 	radii: {
 		r16: '1rem',
@@ -44,8 +55,8 @@ export const theme = {
 		r30: '1.875rem',
 		r80: '5rem',
 	},
-	zIndices:{
-        base: 0,
+	zIndices: {
+		base: 0,
 		upper: 1,
 		modal: 10,
 		loader: 11,
