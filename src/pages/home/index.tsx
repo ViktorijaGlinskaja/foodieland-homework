@@ -1,12 +1,16 @@
 import React from 'react';
-import { SectionWrapper, Typography } from 'components';
-import Navbar from './sections/Navbar';
-import HomePageHero from './sections/Hero';
+import { Categories, Footer, HomePageHero, LearnMore, Navbar, Recipes, Subscription } from './sections';
+
 
 const Home: React.FC = () => (
 	<>
-		<Navbar/>
+		<Navbar />
 		<HomePageHero />
+		<Categories /> 
+		<Recipes />
+		<LearnMore />
+		<Subscription/>
+		<Footer/>
 	</>
 );
 

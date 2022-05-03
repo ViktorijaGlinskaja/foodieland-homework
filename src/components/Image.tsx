@@ -21,16 +21,6 @@ interface ImageProps extends Styles {
     onClick?: () => void;
 }
 
-const Img = styled.img<Styles>`
-    margin: ${({ margin }) => margin || ''};
-    padding: ${({ padding }) => padding || ''};
-    max-width: ${({ maxWidth }) => maxWidth || ''};
-    width: ${({ width }) => width || ''};
-    height: ${({ height }) => height || ''};
-    max-height: ${({ maxHeight }) => maxHeight || ''};
-    border-radius: ${({ borderRadius }) => borderRadius || ''};
-`;
-
 export const Image: React.FC<ImageProps> = ({ src, alt, mobile_src, onClick, ...rest }) => {
     return (
         <LazyLoad height={200}>
@@ -41,3 +31,13 @@ export const Image: React.FC<ImageProps> = ({ src, alt, mobile_src, onClick, ...
         </LazyLoad>
     )
 }
+
+const Img = styled.img<Styles>`
+    margin: ${({ margin }) => margin || ''};
+    padding: ${({ padding }) => padding || ''};
+    max-width: ${({ maxWidth }) => maxWidth || ''};
+    width: ${({ width }) => width || ''};
+    height: ${({ height }) => height || ''};
+    max-height: ${({ maxHeight }) => maxHeight || ''};
+    border-radius: ${({ borderRadius }) => borderRadius || ''};
+`;

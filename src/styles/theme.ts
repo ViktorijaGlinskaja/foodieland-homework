@@ -37,6 +37,7 @@ export const theme = {
 	},
 	breakpoints: ['24rem', '47rem', '90rem'] as unknown as Breakpoints,
 	space: {
+		auto: 'auto',
 		s0: '0rem',
 		s4: '0.25rem',
 		s8: '0.5rem',
@@ -47,6 +48,9 @@ export const theme = {
 		s48: '3rem',
 		s64: '4rem',
 		s80: '5rem',
+		s96: '6rem',
+		s160: '10rem',
+		s192: '12rem',
 	},
 	radii: {
 		r16: '1rem',

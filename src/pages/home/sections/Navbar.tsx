@@ -1,18 +1,23 @@
 import React from 'react'
 import { FlexWrapper, Image } from 'components'
 import { useQuery } from 'styles/breakpoints';
-import NavbarMenu from '../elements/NavbarMenu';
-import NavbarSocialBar from '../elements/NavbarSocialBar';
+import { SectionsMenu, SocialBar } from '../elements';
 
-const Navbar: React.FC = () => {
-  const { isTablet, isMobile } = useQuery();
+export const Navbar: React.FC = () => {
+  const { isTablet } = useQuery();
   return (
-    <FlexWrapper flexDirection={isTablet ? 'column' : 'row'} alignItems='center' borderBottom="1px solid rgba(0, 0, 0, 0.1)" justifyContent='space-between' paddingX={isTablet ? 's0' : 's80'} paddingY={isTablet ? 's24' : 's40'}>
+    <FlexWrapper
+      flexDirection={isTablet ? 'column' : 'row'}
+      alignItems='center'
+      justifyContent='space-between'
+      borderBottom="1px solid rgba(0, 0, 0, 0.1)"
+      paddingX={isTablet ? 's0' : 's80'}
+      paddingY={isTablet ? 's24' : 's40'}
+    >
       <Image maxHeight='1.875rem' src='logo' alt='logo' />
-      <NavbarMenu />
-      <NavbarSocialBar/>
+      <SectionsMenu />
+      <SocialBar />
     </FlexWrapper>
   )
 }
 
-export default Navbar

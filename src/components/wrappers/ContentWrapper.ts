@@ -1,6 +1,5 @@
 import styled from "styled-components/macro";
 import { tablet } from "styles/breakpoints";
-import { Theme } from "styles/theme";
 
 import { Box } from "./Box";
 

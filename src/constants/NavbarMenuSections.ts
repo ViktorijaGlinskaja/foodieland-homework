@@ -1,4 +1,8 @@
-export const SECTIONS = [
+export interface Section {
+  title: string;
+}
+
+export const SECTIONS : Section[]= [
     { title: 'Home' },
     { title: 'Recipes' },
     { title: 'Blog' },

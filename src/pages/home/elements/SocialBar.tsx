@@ -2,7 +2,7 @@ import React from 'react';
 import { FlexWrapper, Image } from 'components';
 import { useQuery } from 'styles/breakpoints';
 
-const NavbarSocialBar: React.FC = () => {
+export const SocialBar: React.FC = () => {
     const { isTablet, isMobile } = useQuery();
     return (
         <FlexWrapper display={isMobile ? 'none' : 'flex'} paddingTop={isTablet ? 's8' : 's0'}>
@@ -12,5 +12,3 @@ const NavbarSocialBar: React.FC = () => {
         </FlexWrapper>
     )
 };
-
-export default NavbarSocialBar;
