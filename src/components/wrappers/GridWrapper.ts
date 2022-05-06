@@ -4,6 +4,7 @@ import { Theme } from "styles/theme";
 
 import { Box } from "./Box";
 
+
 export const GridWrapper = styled(Box) <GridProps<Theme>>`
   display: grid;
   && {

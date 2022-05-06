@@ -17,6 +17,6 @@ export const SectionWrapper = styled.section<SectionWrapperStyles>`
     padding: 3rem;
   }
   @media ${mobile} {
-    padding: 2rem;
+    padding: 2rem 0.5rem;
   }
 `;

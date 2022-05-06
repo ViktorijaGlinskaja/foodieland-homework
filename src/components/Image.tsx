@@ -10,6 +10,8 @@ interface Styles {
     height?: string;
     margin?: string;
     maxHeight?: string;
+    padding?: string;
+    borderRadius?: string;
     alt: string;
 }
 
@@ -18,14 +20,6 @@ interface ImageProps extends Styles {
     mobile_src?: Visuals;
     onClick?: () => void;
 }
-
-const Img = styled.img<Styles>`
-    margin: ${({ margin }) => margin || ''};
-    max-width: ${({ maxWidth }) => maxWidth || ''};
-    width: ${({ width }) => width || ''};
-    height: ${({ height }) => height || ''};
-    max-height: ${({ maxHeight }) => maxHeight || ''};
-`;
 
 export const Image: React.FC<ImageProps> = ({ src, alt, mobile_src, onClick, ...rest }) => {
     return (
@@ -37,3 +31,13 @@ export const Image: React.FC<ImageProps> = ({ src, alt, mobile_src, onClick, ...
         </LazyLoad>
     )
 }
+
+const Img = styled.img<Styles>`
+    margin: ${({ margin }) => margin || ''};
+    padding: ${({ padding }) => padding || ''};
+    max-width: ${({ maxWidth }) => maxWidth || ''};
+    width: ${({ width }) => width || ''};
+    height: ${({ height }) => height || ''};
+    max-height: ${({ maxHeight }) => maxHeight || ''};
+    border-radius: ${({ borderRadius }) => borderRadius || ''};
+`;

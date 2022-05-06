@@ -1,7 +1,5 @@
 import styled from 'styled-components/macro';
 import {
-	alignSelf,
-	AlignSelfProps,
 	border,
 	BorderProps,
 	BoxShadowProps,
@@ -26,7 +24,7 @@ import {
 
 import { Theme } from 'styles/theme';
 
-const boxProps = compose(
+export const boxProps = compose(
 	space,
 	color,
 	display,
